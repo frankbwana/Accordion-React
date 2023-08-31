@@ -9,6 +9,7 @@
 .accordion{
   width: 500px;
   margin-top: 10px;
+  height: 80vh;
   
 }
 
@@ -16,10 +17,25 @@
   background: #fca5a5;
   margin-bottom: 5px;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 .title{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.content{
+  color: blueviolet;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.content.show{
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s;
+
 }
